@@ -1,6 +1,6 @@
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   margin: 0;
 }
@@ -32,18 +32,17 @@ header, footer {
 }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   flex: 1;
 }
 
 main {
   background: #eee;
-  flex: 2;
   padding: 10px;
 }
 
 aside {
   background: #ccc;
-  flex: 1;
   padding: 10px;
 }
