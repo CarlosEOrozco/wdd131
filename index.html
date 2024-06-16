@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Carlos Orozco">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, course assignment portal, made by: Carlos Orozco">
+    <title>WDD 131 - Dynamic Web Fundamentals - Carlos Orozco</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>Carlos Orozco</h1>
+
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Carlos Orozco</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/carloseorozcon/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng&id=7-8#p6"
+                target="_blank">Scripture</a>
+            <a href="folder/file.html" target="_blank">Final Project</a>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>My Name is Carlos Orozco. I love
+                    coding in general but I also like to watch movies and play games in my free time.</p>
+                <img src="styles/images/profile-pic.webp" alt="Profile picture">
+            </div>
+            <h3 class="ar-title">Cordoba, Argentina</h3>
+            <hr>
+            <div class="about-ar">
+                <img src="styles/images/argentina-flag-icon.svg" alt="Profile picture">
+                <p class="ar-title">I'm originally from Venezuela but I'm currently living in Cordoba Argentina.
+                    Argentina is well known for their good football team, but milanesas and asado are a close second 😄
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://codepen.io/">Code Pen</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">developer.mozilla.org</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/es/">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <span id="currentyear"></span>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
