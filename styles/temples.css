@@ -17,7 +17,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: none; /* Initially hide the nav items */
+    display: none; 
 }
 
 nav ul li {
@@ -31,7 +31,7 @@ nav ul li a {
 }
 
 nav ul li:hover a {
-    color: #ffd700; /* Color amarillo (o el color deseado) cuando se hace hover */
+    color: #ffd700; 
 }
 
 .hamburger {
@@ -40,7 +40,7 @@ nav ul li:hover a {
     border: none;
     outline: none;
     color: #fff;
-    display: block; /* Ensure the hamburger button is visible */
+    display: block; 
 }
 
 main {
@@ -49,17 +49,17 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 20px; /* Adjust gap between images */
+    grid-template-columns: 1fr; 
+    gap: 20px; 
 }
 
 figure {
-    text-align: center; /* Center align figure content */
+    text-align: center; 
 }
 
 figcaption {
     margin-top: 10px;
-    color: #666; /* Adjust caption color */
+    color: #666; 
 }
 
 footer {
