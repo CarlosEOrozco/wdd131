@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hide the nav items */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburger {
+    background-color: #333;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block; /* Ensure the hamburger button is visible */
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px; /* Adjust gap between images */
+}
+
+figure {
+    text-align: center; /* Center align figure content */
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #666; /* Adjust caption color */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
