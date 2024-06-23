@@ -25,9 +25,13 @@ nav ul li {
     margin-left: 20px;
 }
 
-nav a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+nav ul li:hover a {
+    color: #ffd700; /* Color amarillo (o el color deseado) cuando se hace hover */
 }
 
 .hamburger {
