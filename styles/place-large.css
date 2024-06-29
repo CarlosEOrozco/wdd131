@@ -1,21 +1,41 @@
 @media screen and (min-width: 768px) {
+    .hero {
+        height: 70vh; /* Ajustar altura según sea necesario */
+    }
+
     .hero .content {
-        display: grid;
-        grid-template-columns: auto auto; /* Columnas ajustables al contenido */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
         background-color: rgba(255, 255, 255, 0.8);
         padding: 20px;
         border-radius: 10px;
-        gap: 20px; /* Espacio entre las columnas */
     }
 
     .data {
-        grid-column: 1; /* Coloca en la primera columna */
+        width: 45%;
+        margin-right: 10px; /* Espacio entre las cajas */
+        padding-right: 10px; /* Espacio interno */
+        border-right: 1px solid #ccc; /* Línea divisoria */
+        box-sizing: border-box; /* Incluye borde en el ancho total */
     }
-    
+
     .weather {
-        grid-column: 2; /* Coloca en la segunda columna */
+        width: 45%;
+        margin-left: 10px; /* Espacio entre las cajas */
+        padding-left: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye borde en el ancho total */
+    }
+
+    .weather::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc; /* Color de la línea */
+        margin-top: 10px; /* Espacio entre la línea y el contenido */
     }
 }
