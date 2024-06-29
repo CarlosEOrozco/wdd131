@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="styles/images/argentina-image-large.webp" media="(min-width: 600px)">
+                <img src="styles/images/argentina-image-small.webp" alt="Argentina Image">
+            </picture>
+            <div class="content">
+                <section class="data">
+                    <h2>Data</h2>
+                    <ul>
+                        <li>Area: 2,780,400 sq km</li>
+                        <li>Population: 45,376,763</li>
+                        <li>Capital: Buenos Aires</li>
+                        <li>Languages: Spanish</li>
+                        <li>Currency: Argentine Peso</li>
+                        <li>Time Zone: UTC-3</li>
+                        <li>Calling Code: +54</li>
+                        <li>Internet TLD: .ar</li>
+                    </ul>
+                </section>
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <img src="styles/images/weather_clouds_sun_sunny_icon.svg" alt="Weather Icon">
+                    <ul>
+                        <li>Temperature: 10°C</li>
+                        <li>Conditions: Partly Cloudy</li>
+                        <li>Wind: 5 km/h</li>
+                        <li>Wind Chill: <span id="wind-chill"></span>°C</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 🌸 Carlos Orozco 🌸 Argentina</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
