@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #d32f2f;
+    background-color: var(--primary-color);;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -50,7 +50,7 @@ header {
 
 
 footer {
-    background-color: #d32f2f;
+    background-color: var(--primary-color);;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -58,6 +58,6 @@ footer {
 
 
 :root {
-    --primary-color: #d32f2f;
+    --primary-color: #0369ee;
     --secondary-color: #333;
 }
