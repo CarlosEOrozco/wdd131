@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; 
+}
+
+nav ul.show {
+    display: block; 
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover a {
+    color: #ffd700; 
+}
+
+.hamburger {
+    background-color: #333;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block; 
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}
+
+figure {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+figure:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    color: #666; 
+}
+
+figcaption h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+figcaption p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
