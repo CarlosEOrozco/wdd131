@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    // Function to display temples
+    //display temples
     const displayTemples = (filteredTemples) => {
         gallery.innerHTML = "";
         filteredTemples.forEach(temple => {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display all temples by default
     displayTemples(temples);
 
-    // Filter temples based on navigation click
+    // Filter temples 
     navMenu.addEventListener('click', (e) => {
         if (e.target.tagName === 'A') {
             const filter = e.target.getAttribute('data-filter');
@@ -129,15 +129,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Set current year
+    // Set year
     const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
 
-    // Set last modified date
+    // last modified date
     const lastModifiedDate = new Date(document.lastModified);
     lastModifiedSpan.textContent = lastModifiedDate.toLocaleDateString();
 
-    // Toggle hamburger menu
+    // Toggle menu
     hamburgerButton.addEventListener('click', () => {
         navMenu.classList.toggle('show');
         if (navMenu.classList.contains('show')) {

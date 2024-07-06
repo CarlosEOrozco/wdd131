@@ -1,3 +1,4 @@
+/* Basic Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,11 +18,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: none; 
-}
-
-nav ul.show {
-    display: block; 
+    display: none;
 }
 
 nav ul li {
@@ -34,8 +31,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li:hover a {
-    color: #ffd700; 
+nav ul li a:hover {
+    color: #ffd700;
 }
 
 .hamburger {
@@ -44,7 +41,7 @@ nav ul li:hover a {
     border: none;
     outline: none;
     color: #fff;
-    display: block; 
+    display: block;
 }
 
 main {
@@ -53,42 +50,20 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 figure {
-    border: 1px solid #ccc;
-    padding: 15px;
     text-align: center;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-figure:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 figcaption {
-    color: #666; 
-}
-
-figcaption h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #333;
-}
-
-figcaption p {
-    margin: 5px 0;
+    margin-top: 10px;
+    color: #666;
 }
 
 footer {
