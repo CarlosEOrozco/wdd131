@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+#rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#rating label {
+    font-size: 2rem;
+    cursor: pointer;
+    color: gold; /* Todas las estrellas inicialmente doradas */
+    transition: color 0.3s; /* Transición suave de color */
+}
+
+#rating input:checked ~ label {
+    color: red; /* Estrella seleccionada en rojo */
+}
+
+#rating input:not(:checked) ~ label {
+    filter: grayscale(100%); /* Estrellas no seleccionadas en escala de grises */
+}
+
+#rating label:hover {
+    color: gold; /* Estrellas no seleccionadas al pasar el ratón doradas */
+    filter: none; /* Eliminar escala de grises al pasar el ratón */
+}
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    max-width: 350px; /* Adjusted max-width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
