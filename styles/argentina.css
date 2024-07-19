@@ -1,0 +1,21 @@
+/* Index Page Styles */
+main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em; /* Increase the font size */
+}
+
+main > section > p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 20px 0; /* Add some margin for better spacing */
+}
+
+main > section > img {
+    border-radius: 10px;
+    margin: 20px 0; /* Add some margin for better spacing */
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+}
